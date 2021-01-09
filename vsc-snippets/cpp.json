@@ -1,0 +1,47 @@
+{
+  "Competetive Programming": {
+    "prefix": "include",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "#define fr(n) for(int i=0;i<n;++i)",
+      "#define rep(i,a,n) for(int i=a;i<n;++i)",
+      "#define endl \"\\n\"",
+      "using namespace std;",
+      "",
+      "void solve(){",
+      "		",
+      "}",
+      "",
+      "int main(){",
+      "	int t;",
+      "	cin >> t;",
+      "	while(t>0){",
+      "		solve();",
+      "		t--;",
+      "	}",
+      "	return 0;",
+      "}",
+      ""
+    ],
+    "description": "Competetive Programming"
+  }
+  ,
+  "Power binary exponentiation": {
+  "prefix": "power",
+  "body": [
+    "//iterative implementation of binary exponenetiation   ",
+    "//use for cp",
+    "//for eg if b = 22, we convert to bits i.e. 10110 and then use a^2 where the bits of b are 1. a^2.a^4.a^16 = a^22",
+    "int power(int a, int b){",
+    "    int result = 1;",
+    "    while(b > 0){",
+    "        if(b&1) result *= a;    // or if(b%2 == 1) result *= a; I have used bit just to be showy xD",
+    "        a *= a;",
+    "        b >>= 1;                // or use b/=2; again just to be showy",
+    "    }",
+    "    return result;",
+    "}"
+  ],
+  "description": "Power binary exponentiation"
+}
+}
